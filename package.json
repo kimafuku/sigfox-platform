@@ -19,10 +19,7 @@
     "postinstall": "yarn build",
     "build": "cd frontend/ && npm cache verify && yarn build && cd ..",
     "start": "npm run serve",
-    "backend": "cd backend/ && node server/server.js && cd ..",
-    "frontend": "cd frontend/ && node server/server.ts && cd ..",
-    "primus": "cd primus/ && npm start && cd ..",
-    "test": "npm run install"
+    "backend": "cd backend/ && node server/server.js && cd .."
   },
   "devDependencies": {
     "all-contributors-cli": "^6.20.0"
