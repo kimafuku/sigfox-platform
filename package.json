@@ -14,8 +14,6 @@
     "npm": "6.x"
   },
   "scripts": {
-    "start": "node index.js", 
-    "build": "yarn",
     "contributors:add": "all-contributors add",
     "preinstall": "cd backend/ && yarn --frozen-lockfile && cd ../frontend && yarn --frozen-lockfile && cd ..",
     "postinstall": "yarn build",
