@@ -18,8 +18,10 @@
     "preinstall": "cd backend/ && yarn --frozen-lockfile && cd ../frontend && yarn --frozen-lockfile && cd ..",
     "postinstall": "yarn build",
     "build": "cd frontend/ && npm cache verify && yarn build && cd ..",
-    "start": "npm run serve",
-    "backend": "cd backend/ && node server/server.js && cd .."
+    "start": "npm run server",
+    "backend": "cd backend/ && node server/server.js && cd ..",
+    "frontend": "cd frontend/ && node server/server.ts && cd ..",
+    "primus": "cd primus/ && npm start && cd ..",
   },
   "devDependencies": {
     "all-contributors-cli": "^6.20.0"
