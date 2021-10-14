@@ -18,7 +18,7 @@
     "preinstall": "cd backend/ && yarn --frozen-lockfile && cd ../frontend && yarn --frozen-lockfile && cd ..",
     "postinstall": "yarn build",
     "build": "cd frontend/ && npm cache verify && yarn build && cd ..",
-    "start": "npm run serve",
+    "start": "npm run build",
     "backend": "cd backend/ && node server/server.js && cd ..",
     "frontend": "cd frontend/ && node server/server.ts && cd ..",
     "primus": "cd primus/ && npm start && cd ..",
